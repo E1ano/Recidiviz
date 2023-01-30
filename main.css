@@ -757,5 +757,28 @@ body {
     font-size: 10px;
     line-height: 15px;
     color: #E5ECEC;
+}
 
+/*button for scroll top*/
+.go-top__button {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    background: rgba(59, 154, 252, 0.89);
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.go-top__button:hover {
+    transition: 0.3s;
+    background: rgba(203, 10, 5, 0.93);
 }
