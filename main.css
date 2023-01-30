@@ -761,7 +761,7 @@ body {
 
 /*button for scroll top*/
 .go-top__button {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 30px;
     right: 40px;
