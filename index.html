@@ -8,7 +8,7 @@
     <title>Recidiviz</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/png">
     <link rel="stylesheet" href="main.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="adaptive.css">
 </head>
 <body>
 <header class="header">
@@ -18,11 +18,16 @@
             <div class="logo">
                 <a href=""><img src="images/new-logo.png" alt="logo"></a>
             </div>
+            <!--burger menu-->
+            <div class="menu__burger">
+                <span></span>
+            </div>
+            <!--normal menu-->
             <nav class="menu__nav">
-                <div class="menu__item"><a class="menu__link" href="">States</a></div>
-                <div class="menu__item"><a class="menu__link" href="">Tools</a></div>
-                <div class="menu__item"><a class="menu__link" href="">People</a></div>
-                <div class="menu__item"><a class="menu__link" href="">Learn More</a></div>
+                <div class="menu__item"><a class="menu__link" href="#states">States</a></div>
+                <div class="menu__item"><a class="menu__link" href="#tools">Tools</a></div>
+                <div class="menu__item"><a class="menu__link" href="#people">People</a></div>
+                <div class="menu__item"><a class="menu__link" href="#more">Learn More</a></div>
                 <div class="menu__item"><a class="menu__link" href="">Donate</a></div>
                 <div class="menu__item"><a class="menu__link" href="">Log In</a></div>
             </nav>
@@ -91,7 +96,7 @@
         </div>
     </div>
 
-    <div class="our-approach">
+    <div class="our-approach" id="people">
         <div class="container">
             <div class="our-approach__inner">
                 <div class="our-approach__left">
@@ -234,7 +239,7 @@
         </div>
     </div>
 
-    <div class="press">
+    <div class="press" id="more">
         <div class="container">
             <div class="press__top">
                 <h3 class="press__title">Recidiviz in the Press</h3>
@@ -301,7 +306,7 @@
         </div>
     </div>
 
-    <div class="location">
+    <div class="location" id="states">
         <div class="container">
             <div class="location__inner">
                 <div class="location__block">
@@ -317,7 +322,7 @@
     </div>
 </main>
 <footer>
-    <div class="top-section">
+    <div class="top-section" id="tools">
         <div class="container">
             <div class="top-section__inner">
                 <div class="top-section__item">
@@ -390,5 +395,6 @@
 
     <div class="go-top__button">&#8593</div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

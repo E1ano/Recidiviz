@@ -27,7 +27,8 @@ body {
 
 .header {
     background: url("images/header-bg2.jpg") center /cover no-repeat;
-    height: 100vh;
+    /*height: 100vh;*/
+    padding-bottom: 80px;
 }
 
 .container {
@@ -41,7 +42,8 @@ body {
     margin-bottom: 80px;
 }
 
-.menu {
+.menu__burger {
+    display: none;
 }
 
 .logo {
@@ -568,7 +570,7 @@ body {
 
 .bottom__logo1 {
     display: inline-block;
-    background: url("images/ted.png") no-repeat;
+    background: url("images/ted.png") center no-repeat;
     width: 24px;
     height: 24px;
     border-radius: 3px;
@@ -576,7 +578,7 @@ body {
 
 .bottom__logo2 {
     display : inline-block;
-    background: url("images/cn.png") no-repeat;
+    background: url("images/cn.png") center no-repeat;
     width: 24px;
     height: 24px;
     border-radius: 3px;
@@ -584,7 +586,7 @@ body {
 
 .bottom__logo3 {
     display: inline-block;
-    background: url("images/doj.png") no-repeat;
+    background: url("images/doj.png") center no-repeat;
     width: 24px;
     height: 24px;
     border-radius: 3px;
@@ -592,7 +594,7 @@ body {
 
 .bottom__logo4 {
     display : inline-block;
-    background: url("images/nyt.png") no-repeat;
+    background: url("images/nyt.png") center no-repeat;
     width: 24px;
     height: 24px;
     border-radius: 3px;
@@ -600,7 +602,7 @@ body {
 
 .bottom__logo5 {
     display : inline-block;
-    background: url("images/c1.png") no-repeat;
+    background: url("images/c1.png") center no-repeat;
     width: 24px;
     height: 24px;
     border-radius: 3px;
@@ -608,7 +610,7 @@ body {
 
 .bottom__logo6 {
     display: inline-block;
-    background: url("images/roc.png") no-repeat;
+    background: url("images/roc.png") center no-repeat;
     width: 24px;
     height: 24px;
     border-radius: 3px;
@@ -748,15 +750,15 @@ body {
 }
 
 .bottom-section__block {
-    max-width: 260px;
+    max-width: 285px;
     text-align: right;
 }
 
 .bottom-section__text {
     display: inline-block;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 15px;
-    color: #E5ECEC;
+    color: rgba(211, 211, 211, 0.85);
 }
 
 /*button for scroll top*/
@@ -781,4 +783,8 @@ body {
 .go-top__button:hover {
     transition: 0.3s;
     background: rgba(203, 10, 5, 0.93);
+}
+
+.no-scroll {
+    overflow: hidden;
 }

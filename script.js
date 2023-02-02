@@ -1,8 +1,8 @@
 "use strict";
 
 window.addEventListener('DOMContentLoaded', function() {
-    let topButton = document.querySelector('.go-top__button');
-    console.log(topButton);
+    // go-top arrow
+    const topButton = document.querySelector('.go-top__button');
 
     window.onscroll = function() {scrollFunction()};
 
@@ -18,4 +18,15 @@ window.addEventListener('DOMContentLoaded', function() {
         top:0,
         behavior: 'smooth',
     }));
+
+    // burger action
+    const burgerButton = document.querySelector('.menu__burger');
+    const menu = document.querySelector('.menu__nav')
+    const body = document.querySelector('body');
+
+    burgerButton.addEventListener('click', ()=> {
+        burgerButton.classList.toggle("active");
+        menu.classList.toggle("active");
+        body.classList.toggle("no-scroll");
+    });
 })
